@@ -1,0 +1,18 @@
+{
+  "name": "@tinymce/tinymce-webpack-example",
+  "version": "1.0.0",
+  "description": "Example of tinymce in webpack",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "Tiny Technologies",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^3.0.0",
+    "tinymce": "^5.8.2",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
