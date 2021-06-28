@@ -1,6 +1,6 @@
 # TinyMCE Webpack Example
 
-This page give an example of how to bundle TinyMCE using webpack. This however
+This page gives an example of how to bundle TinyMCE using webpack. This however
 is **not** an endorsement of bundling TinyMCE. 
 
 It is frequently much better to serve the `tinymce` folder along with your
