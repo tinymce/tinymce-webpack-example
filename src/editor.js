@@ -13,6 +13,8 @@
   // TinyMCE global which is used to init the editor
   import tinymce from 'tinymce/tinymce';
 
+  // DOM model
+  import 'tinymce/models/dom/model'
   // Theme
   import 'tinymce/themes/silver';
   // Toolbar icons
@@ -22,28 +24,37 @@
 
   // importing the plugin js.
   import 'tinymce/plugins/advlist';
-  import 'tinymce/plugins/autolink';
-  import 'tinymce/plugins/link';
-  import 'tinymce/plugins/image';
-  import 'tinymce/plugins/lists';
-  import 'tinymce/plugins/charmap';
-  import 'tinymce/plugins/hr';
   import 'tinymce/plugins/anchor';
-  import 'tinymce/plugins/spellchecker';
-  import 'tinymce/plugins/searchreplace';
-  import 'tinymce/plugins/wordcount';
+  import 'tinymce/plugins/autolink';
+  import 'tinymce/plugins/autoresize';
+  import 'tinymce/plugins/autosave';
+  import 'tinymce/plugins/charmap';
   import 'tinymce/plugins/code';
+  import 'tinymce/plugins/codesample';
+  import 'tinymce/plugins/directionality';
+  import 'tinymce/plugins/emoticons';
   import 'tinymce/plugins/fullscreen';
+  import 'tinymce/plugins/help';
+  import 'tinymce/plugins/image';
+  import 'tinymce/plugins/importcss';
   import 'tinymce/plugins/insertdatetime';
+  import 'tinymce/plugins/link';
+  import 'tinymce/plugins/lists';
   import 'tinymce/plugins/media';
   import 'tinymce/plugins/nonbreaking';
+  import 'tinymce/plugins/pagebreak';
+  import 'tinymce/plugins/preview';
+  import 'tinymce/plugins/quickbars';
+  import 'tinymce/plugins/save';
+  import 'tinymce/plugins/searchreplace';
   import 'tinymce/plugins/table';
   import 'tinymce/plugins/template';
-  import 'tinymce/plugins/help';
-  import 'tinymce/plugins/print';
-  import 'tinymce/plugins/preview';
   import 'tinymce/plugins/visualblocks';
-  import 'tinymce/plugins/paste';
+  import 'tinymce/plugins/visualchars';
+  import 'tinymce/plugins/wordcount';
+
+// importing plugin resources
+import 'tinymce/plugins/emoticons/js/emojis';
 
   // Content styles, including inline UI like fake cursors
   // All the above CSS files are loaded on to the page but these two must
@@ -62,11 +73,11 @@
     selector: '.editor',
     // every plugin you load must also be imported above
     plugins: [
-      'advlist autolink lists link image charmap print preview anchor',
-      'searchreplace visualblocks code fullscreen',
-      'insertdatetime media table paste code help wordcount'
+      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 
+      'preview', 'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+      'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
     ],
-    toolbar: 'undo redo | formatselect | ' +
+    toolbar: 'undo redo | blocks | ' +
     'bold italic backcolor | alignleft aligncenter ' +
     'alignright alignjustify | bullist numlist outdent indent | ' +
     'removeformat | code | help',

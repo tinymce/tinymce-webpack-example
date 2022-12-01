@@ -8,11 +8,11 @@
   "author": "Tiny Technologies",
   "license": "MIT",
   "devDependencies": {
-    "css-loader": "^6.5.1",
+    "css-loader": "^6.7.2",
     "raw-loader": "^4.0.2",
     "style-loader": "^3.3.1",
-    "tinymce": "^5.10.1",
-    "webpack": "^5.62.1",
-    "webpack-cli": "^4.9.1"
+    "tinymce": "^6.3.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   }
 }
